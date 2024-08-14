@@ -29,6 +29,8 @@ section #out #navbar nav
     display: flex;
     justify-content: space-between;
     z-index: 3;
+    position: fixed;
+    width: 100%;
 }
 
 nav #linkz
