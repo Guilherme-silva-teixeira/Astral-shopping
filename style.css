@@ -28,7 +28,6 @@ section #out #navbar nav
     height: 27px;
     display: flex;
     justify-content: space-between;
-    position: absolute;
     z-index: 3;
 }
 
