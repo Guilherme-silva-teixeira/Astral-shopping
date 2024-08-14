@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    h1,h2,h3,h4,h5,h6
+    {
+        margin-top: 0;
+        margin-bottom: .5rem
+    }
+    </style>
+</head>
+<body>
+    <header></header>
+    <section>
+        <div id="out">
+            <div id="navbar">
+                <nav>
+                    <div id="icons">logo</div>
+                    <div id="linkz">
+                    <strong>
+                        <a href="#" id="link1">PC GAMER</a>
+                        <div id="bottomline-1"></div>
+                        </strong>
+                        <strong>
+                        <a href="#" id="link2">HARDWARE</a>
+                        <div id="bottomline-2"></div>
+                    </strong>
+                    </div>
+                    <div id="shop">shIcon1</div>
+                </nav>
+            </div>
+        </div>
+        <div id="up-container">
+            <br><br><br>
+        </div>
+        <div id="middle-container">
+            <section id="01">
+                <div id="l-i">
+                    <img src="img/1.png" alt="">
+                </div>
+                <div id="r-t">
+                    <div id="des">
+                        <p>UMA NOVA ERA</p>
+                    </div>
+                    <h1>AURORA V1</h1>
+                    <div id="button">
+                        <button id="seeMore">VEJA MAIS</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="01">
+                <div id="l-i">
+                    <img src="img/1.png" alt="">
+                </div>
+                <div id="r-t">
+                    <div id="des">
+                        <p>UMA NOVA ERA</p>
+                    </div>
+                    <h1>AURORA V1</h1>
+                    <div id="button">
+                        <button id="seeMore">VEJA MAIS</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="01">
+                <div id="l-i">
+                    <img src="img/1.png" alt="">
+                </div>
+                <div id="r-t">
+                    <div id="des">
+                        <p>UMA NOVA ERA</p>
+                    </div>
+                    <h1>AURORA V1</h1>
+                    <div id="button">
+                        <button id="seeMore">VEJA MAIS</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="bottom">
+
+        </div>
+    </section>
+    <footer>
+        <div id="footPage">
+
+        </div>
+    </footer>
+    <script>
+        let links1 = document.getElementById("link1").addEventListener("mouseenter",
+            function()
+            {
+                let bottomline1 = document.getElementById("bottomline-1");
+                bottomline1.style.width = "100%";
+                bottomline1.style.transition = "0.7s ease-in-out";
+                this.addEventListener("mouseleave",
+                    function()
+                    {
+                        bottomline1.style.width = "0%";
+                    }
+                );
+            }
+        );
+        let links2 = document.getElementById("link2").addEventListener("mouseenter",
+            function()
+            {
+                let bottomline2 = document.getElementById("bottomline-2");
+                bottomline2.style.width = "100%";
+                bottomline2.style.transition = "0.7s ease-in-out";
+                this.addEventListener("mouseleave",
+                    function()
+                    {
+                        bottomline2.style.width = "0%";
+                    }
+                );
+            }
+        );
+    </script>
+</body>
+</html>
