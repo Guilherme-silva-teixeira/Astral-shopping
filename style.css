@@ -191,3 +191,19 @@ nav #shop
 {
     margin-top: 13px;
 }
+
+#footPage
+{
+    margin-top: 0;
+    padding: 17px 13px 0px 13px;
+    height: 301px;
+    background: #e4e4e4;
+    display: flex;
+    justify-content: space-between;
+}
+#footPage #icons i
+{
+    font-size: 27px;
+    margin-right: 3px;
+    color: #535353;
+}
