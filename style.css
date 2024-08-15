@@ -200,10 +200,20 @@ nav #shop
     background: #e4e4e4;
     display: flex;
     justify-content: space-between;
+    color: #797979;
 }
 #footPage #icons i
 {
     font-size: 27px;
     margin-right: 3px;
-    color: #535353;
+}
+
+#credits
+{
+    margin-top: 17px;
+    color: #777;
+}
+#credits p
+{
+    font-family: 'poppins',sans-serif;
 }
