@@ -218,7 +218,32 @@ nav #shop
     font-family: 'poppins',sans-serif;
 }
 
+#imges
+{
+    display: flex;
+    height: 777px;
+    overflow: hidden;
+    padding: 7px;
+}
+
 #service1
 {
+    margin-left: -777px;
     background-image: url("img/as1.png");
+}
+
+#service2
+{
+    background-image: url("img/as2.png");
+}
+
+#service3
+{
+    background-image: url("img/as3.png");
+}
+
+#service #out button
+{
+    height: 37px;
+    width: 37px;
 }
