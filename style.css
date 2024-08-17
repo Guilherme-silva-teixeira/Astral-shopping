@@ -229,7 +229,7 @@ nav #shop
     display: flex;
     height: 777px;
     overflow: hidden;
-    padding: 7px;
+    padding: 0;
 }
 
 #service1
