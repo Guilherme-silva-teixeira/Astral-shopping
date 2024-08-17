@@ -218,6 +218,12 @@ nav #shop
     font-family: 'poppins',sans-serif;
 }
 
+#service
+{
+    background: #e4e4e4;
+    border-bottom: 1px solid#111;
+}
+
 #imges
 {
     display: flex;
@@ -261,8 +267,19 @@ nav #shop
     align-items: center;
 }
 
+#left-container , #right-container
+{
+    height: 100%;
+    width: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #service #out button
 {
+    position: absolute;
+    z-index: 1;
     height: 37px;
     width: 37px;
     cursor: pointer;
@@ -273,9 +290,26 @@ nav #shop
     font-size: 17px;
     font-weight: 300;
     background: #fff;
+    z-index: 3;
 }
 
 #out button:active
 {
     background: #e4e4e4;
+}
+
+#left-box
+{
+    margin-top: 102px;
+    height: 779px;
+    width: 77px;
+    background: linear-gradient(90deg, #111 45%, #0000 55%);
+}
+
+#right-box
+{
+    margin-top: 102px;
+    height: 779px;
+    width: 77px;
+    background: linear-gradient(90deg, #0000 45%, #111 55%);
 }
