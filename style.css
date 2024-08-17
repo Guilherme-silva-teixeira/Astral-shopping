@@ -226,6 +226,7 @@ nav #shop
 
 #imges
 {
+    width: 2334px;
     display: flex;
     height: 777px;
     overflow: hidden;
@@ -312,4 +313,5 @@ nav #shop
     height: 779px;
     width: 77px;
     background: linear-gradient(90deg, #0000 45%, #111 55%);
+    
 }
