@@ -9,7 +9,15 @@ let left = document.getElementById("left").addEventListener("click",
     {
         atualPos -= swipePos;
         imageContaineer.style.marginLeft = atualPos + "px";
-        console.log(imageContaineer.style.marginLeft);
+        console.log(atualPos);
+        if(atualPos == -2331)
+        {
+            swipePos = 0;
+        }
+        else
+        {
+            swipePos = 177;
+        }
     }
 );
 
