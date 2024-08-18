@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'calibri',sans-serif;
+}
+
+body
+{
+    background: #fff;
+    color: #111;
+}
+
+section
+{
+    color: #111;
+}
+
+section #out #navbar nav
+{
+    padding: 13px 17px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+}
+
+nav #linkz
+{
+    margin-top: 1px;
+    width: 197px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#linkz a
+{
+    font-weight: 500;
+    font-family: 'roboto',sans-serif;
+    text-decoration: none;
+    color: #111;
+    font-size: 17px;
+}
+
+#shop
+{
+    display: flex;
+}
+
+#shop i
+{
+    font-size: 23px;
+}
+
+#logo
+{
+    margin-top: -27px;
+}
