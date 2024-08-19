@@ -71,20 +71,31 @@ nav #linkz
 #container
 {
     position: absolute;
+    display: flex;
+    flex-direction: row;
     padding: 13px;
     margin-top: 73px;
+    /*font-family: 'poppins',sans-serif;*/
+}
+
+#container #firstL
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #first-product
 {
-    width: 217px;
+    width: 177px;
     height: 231px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2.7px solid #999;
-    border-radius: 7px;
+    border: 1px solid #111;
+    border-radius: 3px;
+    margin-right: 13px;
 }
 
 #first-product #img
@@ -97,13 +108,14 @@ nav #linkz
     /*background: #f00;*/
 }
 
-#img i
+#img span
 {
     margin-top: -27px;
     padding: 0;
-    font-size: 147px;
-    color: #999;
-    border-bottom: 3px solid #999;
+    font-size: 137px;
+    color: #333;
+    border-bottom: 3px solid #333;
+    font-weight: 200;
 }
 
 #bottom-des
@@ -118,22 +130,85 @@ nav #linkz
 {
     width: 131px;
     border: 0;
-    background: #ddd;
+    background: #fff;
     margin-bottom: 7px;
     margin-left: -13px;
     height: 23px;
-    border: 1px solid #555;
+    border: 1px solid #000;
     border-radius: 3px;
     padding-left: 3px;
+    cursor: pointer;
+    font-family: 'poppins',sans-serif;
+    font-size: 11px;
 }
 
 #bottom-des button
 {
+    cursor: pointer;
     margin-left: -13px;
-    border: 1px solid #555;
     height: 23px;
     width: 131px;
-    background: #ddd;
-    color: #777;
+    background: #000;
+    color: #fff;
     border-radius: 3px;
+    font-family: 'poppins',sans-serif;
+}
+
+/*product*/
+
+#product
+{
+    width: 177px;
+    height: 231px;
+    border: 1px solid #111;
+    margin-right: 13px;
+}
+
+#product #imgProduct
+{
+    margin-left: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 155.69px;
+    width: 153px;
+}
+
+#imgProduct img
+{
+    height: 153px;
+    width: 153px;
+}
+
+#bottomProduct
+{
+    padding-left: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#bottomProduct #tipo
+{
+    font-size: 11px;
+    color: #777;
+    margin-bottom: -1px;
+}
+
+#bottomProduct p
+{
+    font-family: 'poppins',sans-serif;
+    font-size: 14.9px;
+}
+
+#bottomProduct button
+{
+    cursor: pointer;
+    height: 23px;
+    background: #111;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    width: 131px;
+    font-family: 'poppins',sans-serif;
 }
