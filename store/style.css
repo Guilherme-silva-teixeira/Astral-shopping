@@ -64,3 +64,76 @@ nav #linkz
 {
     margin-top: -27px;
 }
+
+
+/*section*/
+
+#container
+{
+    position: absolute;
+    padding: 13px;
+    margin-top: 73px;
+}
+
+#first-product
+{
+    width: 217px;
+    height: 231px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2.7px solid #999;
+    border-radius: 7px;
+}
+
+#first-product #img
+{
+    height: 163px;
+    width: 163px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background: #f00;*/
+}
+
+#img i
+{
+    margin-top: -27px;
+    padding: 0;
+    font-size: 147px;
+    color: #999;
+    border-bottom: 3px solid #999;
+}
+
+#bottom-des
+{
+    margin-top: -13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#des-inp
+{
+    width: 131px;
+    border: 0;
+    background: #ddd;
+    margin-bottom: 7px;
+    margin-left: -13px;
+    height: 23px;
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding-left: 3px;
+}
+
+#bottom-des button
+{
+    margin-left: -13px;
+    border: 1px solid #555;
+    height: 23px;
+    width: 131px;
+    background: #ddd;
+    color: #777;
+    border-radius: 3px;
+}
