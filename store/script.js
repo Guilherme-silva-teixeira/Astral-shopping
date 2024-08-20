@@ -6,7 +6,7 @@ let links1 = document.getElementById("link1").addEventListener("mouseenter",
         bottomline1.style.transition = "0.7s ease-in-out";
         //bottomline1.style.border = "1px solid #111";
         bottomline1.style.height = "1px";
-        bottomline1.style.background = "#111";
+        bottomline1.style.background = "#fff";
         this.addEventListener("mouseleave",
             function()
             {
@@ -23,7 +23,7 @@ let links2 = document.getElementById("link2").addEventListener("mouseenter",
         bottomline2.style.transition = "0.7s ease-in-out";
         //bottomline2.style.border = "1px solid #111";
         bottomline2.style.height = "1px";
-        bottomline2.style.background = "#111";
+        bottomline2.style.background = "#fff";
         this.addEventListener("mouseleave",
             function()
             {
