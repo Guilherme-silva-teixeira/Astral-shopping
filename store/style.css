@@ -25,28 +25,30 @@ section
 section #out #navbar nav
 {
     padding: 13px 17px;
-    height: 27px;
+    height: 43px;
     display: flex;
     justify-content: space-between;
     z-index: 3;
     position: fixed;
     width: 100%;
+    background: #111;
 }
 
 nav #linkz
 {
-    margin-top: 1px;
     width: 197px;
     display: flex;
+    margin-top: 4.9px;
     justify-content: space-between;
+    align-items: center;
 }
 
 #linkz a
 {
-    font-weight: 500;
-    font-family: 'roboto',sans-serif;
+    font-weight: 300;
+    font-family: 'poppins',sans-serif;
     text-decoration: none;
-    color: #111;
+    color: #fff;
     font-size: 17px;
 }
 
@@ -58,6 +60,7 @@ nav #linkz
 #shop i
 {
     font-size: 23px;
+    color: #fff;
 }
 
 #logo
@@ -214,7 +217,6 @@ nav #linkz
     font-family: 'poppins',sans-serif;
     font-size: 14.9px;
 }
-
 
 #bottomProduct button
 {
