@@ -156,6 +156,20 @@ nav #linkz
 
 /*product*/
 
+#container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#firstL2
+{
+    margin-top: 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #product
 {
     width: 177px;
@@ -200,6 +214,7 @@ nav #linkz
     font-family: 'poppins',sans-serif;
     font-size: 14.9px;
 }
+
 
 #bottomProduct button
 {
