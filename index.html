@@ -145,35 +145,5 @@
         </div>
     </footer>
     <script src="script.js"></script>
-    <script>
-        let links1 = document.getElementById("link1").addEventListener("mouseenter",
-            function()
-            {
-                let bottomline1 = document.getElementById("bottomline-1");
-                bottomline1.style.width = "100%";
-                bottomline1.style.transition = "0.7s ease-in-out";
-                this.addEventListener("mouseleave",
-                    function()
-                    {
-                        bottomline1.style.width = "0%";
-                    }
-                );
-            }
-        );
-        let links2 = document.getElementById("link2").addEventListener("mouseenter",
-            function()
-            {
-                let bottomline2 = document.getElementById("bottomline-2");
-                bottomline2.style.width = "100%";
-                bottomline2.style.transition = "0.7s ease-in-out";
-                this.addEventListener("mouseleave",
-                    function()
-                    {
-                        bottomline2.style.width = "0%";
-                    }
-                );
-            }
-        );
-    </script>
 </body>
 </html>
