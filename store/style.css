@@ -84,14 +84,13 @@ nav #linkz
 #container #firstL
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 #first-product
 {
     width: 177px;
-    height: 231px;
+    height: 261px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,21 +161,19 @@ nav #linkz
 #container
 {
     display: flex;
-    flex-wrap: wrap;
 }
 
-#firstL2
+#firstL
 {
     margin-top: 13px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 #product
 {
     width: 177px;
-    height: 231px;
+    height: 261px;
     border: 1px solid #111;
     margin-right: 13px;
 }
@@ -228,4 +225,76 @@ nav #linkz
     border-radius: 3px;
     width: 131px;
     font-family: 'poppins',sans-serif;
+}
+
+#price
+{
+    font-family: 'poppins',sans-serif;
+    font-size: 17.9px;
+    font-weight: 300;
+    color: #700;
+}
+
+@media screen and (max-width: 601px)
+{
+    #container
+    {
+        width: 100%;
+    }
+    #firstL
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #first-product
+    {
+        width: 100%;
+    }
+
+    #product
+    {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13px;
+    }
+
+    #product img
+    {
+        height: 250px;
+        width: 250px;
+        margin-bottom: 33px;
+    }
+
+    #bottomProduct
+    {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 47px;
+    }
+
+    #product button
+    {
+        height: 27px;
+        width: 250px;
+        margin-left: 107px;
+    }
+
+    #product #price
+    {
+        font-size: 21px;
+        margin-left: 169px;
+    }
+
+    #tipo
+    {
+        padding-right: 7px;
+        padding-top: 7px;
+        border-top: 1px solid;
+    }
 }
