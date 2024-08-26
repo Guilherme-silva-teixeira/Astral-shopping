@@ -39,17 +39,47 @@ let desInp = document.getElementById("des-btn").addEventListener("click",
         let outContainer = document.getElementById("javascript-popup-container");
         outContainer.innerHTML =
         `
+        <button id="close">Fechar</button>
            <div id="popup">
-                <button id="close">Fechar</button>
-                teste
+                <div id="window">
+                        <p>Insira o nome do produto</p>
+                    <input type="text" id="productName" placeholder="Adicionar produto:">
+                        <p>Insira o tipo do produto</p>
+                    <input type="text" id="productType" placeholder="Adicionar produto:">
+                        <p>Insira o preço do produto</p>
+                    <input type="text" id="productPrice" placeholder="Adicionar produto:">
+                    <button id="save">Adicionar</button>
+                </div>
            </div>
+           <style>
+                #window
+                {
+                    height: 251px;
+                    width: 251px;
+                    background: #fff;
+                    color: #000;
+                    display: flex;
+                    flex-direction: column;
+                    justfy-content: center;
+                    align-items: center;
+                }
+                
+                #popup
+                {
+                    height: 100vh;
+                    width: 100%;
+                    display: flex;
+                    justfy-content: center;
+                    align-items: center;
+                }
+           </style>
         `;
 
         let closeButton = document.getElementById("close").addEventListener("click",
             function()
             {
                 outContainer.innerHTML = "";
-
+        
                 outContainer.style.position = "absolute";
                 outContainer.style.zIndex = -3;
                 outContainer.style.background = "#0000";
@@ -57,9 +87,11 @@ let desInp = document.getElementById("des-btn").addEventListener("click",
                 outContainer.style.width = "0px";
                 outContainer.style.color = "#0000";
                 outContainer.style.position = "absolute";
-
             }
         );
+
+        //popup window
+
         outContainer.style.position = "absolute";
         outContainer.style.zIndex = 3;
         outContainer.style.background = "#3337"
