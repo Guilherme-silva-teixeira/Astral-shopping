@@ -1,30 +1,41 @@
 let imageContaineer = document.getElementById("imges");
-imageContaineer.style.transition = "0.1s ease";
 
-let swipePos = 177;
-let atualPos = 0;
-
-let left = document.getElementById("left").addEventListener("click",
+let left = document.getElementById("left").addEventListener(
     function()
     {
-        atualPos -= swipePos;
-        imageContaineer.style.marginLeft = atualPos + "px";
-        console.log(atualPos);
-        if(atualPos == -2331)
-        {
-            swipePos = 0;
-        }
-        else
-        {
-            swipePos = 177;
-        }
+        let img1 = document.getElementById("service1");
+        let img2 = document.getElementById("service2");
+        let img3 = document.getElementById("service3");
+        let imges = {img1, img2, img3};
+        imageContaineer.style.background = img1;
     }
 );
 
-let right = document.getElementById("right").addEventListener("click",
+let links1 = document.getElementById("link1").addEventListener("mouseenter",
     function()
     {
-        atualPos += swipePos;
-        imageContaineer.style.marginLeft = atualPos + "px";
+        let bottomline1 = document.getElementById("bottomline-1");
+        bottomline1.style.width = "100%";
+        bottomline1.style.transition = "0.7s ease-in-out";
+        this.addEventListener("mouseleave",
+            function()
+            {
+                bottomline1.style.width = "0%";
+            }
+        );
+    }
+);
+let links2 = document.getElementById("link2").addEventListener("mouseenter",
+    function()
+    {
+        let bottomline2 = document.getElementById("bottomline-2");
+        bottomline2.style.width = "100%";
+        bottomline2.style.transition = "0.7s ease-in-out";
+        this.addEventListener("mouseleave",
+            function()
+            {
+                bottomline2.style.width = "0%";
+            }
+        );
     }
 );
