@@ -40,8 +40,26 @@ let desInp = document.getElementById("des-btn").addEventListener("click",
         outContainer.innerHTML =
         `
            <div id="popup">
+                <button id="close">Fechar</button>
+                teste
            </div>
         `;
+
+        let closeButton = document.getElementById("close").addEventListener("click",
+            function()
+            {
+                outContainer.innerHTML = "";
+
+                outContainer.style.position = "absolute";
+                outContainer.style.zIndex = -3;
+                outContainer.style.background = "#0000";
+                outContainer.style.height = "0px";
+                outContainer.style.width = "0px";
+                outContainer.style.color = "#0000";
+                outContainer.style.position = "absolute";
+
+            }
+        );
         outContainer.style.position = "absolute";
         outContainer.style.zIndex = 3;
         outContainer.style.background = "#3337"
