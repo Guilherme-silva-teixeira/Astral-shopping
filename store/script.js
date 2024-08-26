@@ -32,3 +32,22 @@ let links2 = document.getElementById("link2").addEventListener("mouseenter",
         );
     }
 );
+
+let desInp = document.getElementById("des-btn").addEventListener("click",
+    function()
+    {
+        let outContainer = document.getElementById("javascript-popup-container");
+        outContainer.innerHTML =
+        `
+           <div id="popup">
+           </div>
+        `;
+        outContainer.style.position = "absolute";
+        outContainer.style.zIndex = 3;
+        outContainer.style.background = "#3337"
+        outContainer.style.height = "100vh";
+        outContainer.style.width = "100%"; 
+        outContainer.style.color = "#fff";
+        outContainer.style.position = "fixed";
+    }
+);
