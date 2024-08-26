@@ -60,26 +60,66 @@ let desInp = document.getElementById("des-btn").addEventListener("click",
                     color: #000;
                     display: flex;
                     flex-direction: column;
-                    justfy-content: center;
+                    justify-content: center;
                     align-items: center;
                 }
-                
                 #popup
                 {
+                   /* margin-left: 50%;*/
                     height: 100vh;
                     width: 100%;
                     display: flex;
-                    justfy-content: center;
-                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;    
                 }
+                /*@media screen and (max-width: 601px)
+                {
+                    #popup
+                    {
+                        margin-left: 25%;
+                    }
+                }*/
            </style>
         `;
+
+        let productName = document.getElementById("productName").value;
+        let productType = document.getElementById("productType").value;
+        let productPrice = document.getElementById("productPrice").value;
 
         let closeButton = document.getElementById("close").addEventListener("click",
             function()
             {
                 outContainer.innerHTML = "";
         
+                outContainer.style.position = "absolute";
+                outContainer.style.zIndex = -3;
+                outContainer.style.background = "#0000";
+                outContainer.style.height = "0px";
+                outContainer.style.width = "0px";
+                outContainer.style.color = "#0000";
+                outContainer.style.position = "absolute";
+            }
+        );
+
+        let save = document.getElementById("save").addEventListener("click",
+            function()
+            {
+                let firstL = document.getElementById("firstL").innerHTML +=
+                `
+                <div id="product">
+                    <div id="imgProduct">
+                        
+                    </div>
+                    <div id="bottomProduct">
+                        <p id="tipo">${productType}</p>
+                        <p>${productName}</p>
+                        <div id="price">R\$ ${productPrice}</div>
+                        <button>Comprar</button>
+                    </div>
+                </div>`;
+
+                outContainer.innerHTML = "";
                 outContainer.style.position = "absolute";
                 outContainer.style.zIndex = -3;
                 outContainer.style.background = "#0000";
