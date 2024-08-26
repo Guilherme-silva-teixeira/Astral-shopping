@@ -122,12 +122,23 @@ let desInp = document.getElementById("des-btn").addEventListener("click",
                 let Window = document.getElementById("window");
 
                 popUp.style.position = "absolute";
-                popUp.style.zIndex = -3;
+                popUp.style.zIndex = "-3";
+                popUp.style.background = "#0000";
+                popUp.style.height = "0px";
+                popUp.style.width = "0px";
+                popUp.style.color = "#0000";
+
+                Window.style.position = "absolute";
+                Window.style.zIndex = "-3";
+                Window.style.background = "#0000";
+                Window.style.height = "0px";
+                Window.style.width = "0px";
+                Window.style.color = "#0000";
 
                 outContainer.innerHTML = "";
 
                 outContainer.style.position = "absolute";
-                outContainer.style.zIndex = -3;
+                outContainer.style.zIndex = "-3";
                 outContainer.style.background = "#0000";
                 outContainer.style.height = "0px";
                 outContainer.style.width = "0px";
