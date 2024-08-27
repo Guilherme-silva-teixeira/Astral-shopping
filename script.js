@@ -1,15 +1,26 @@
-let imageContaineer = document.getElementById("imges");
+let imageContainer = document.getElementById("imges");
+let clicks = 1;
+imageContainer.style.background = "url('img/as1.png')";
 
-let left = document.getElementById("left").addEventListener(
-    function()
-    {
-        let img1 = document.getElementById("service1");
-        let img2 = document.getElementById("service2");
-        let img3 = document.getElementById("service3");
-        let imges = {img1, img2, img3};
-        imageContaineer.style.background = img1;
+let left = document.getElementById("left").addEventListener("click", function() {
+    clicks--;
+    updateBackground();
+});
+
+let right = document.getElementById("right").addEventListener("click", function() {
+    clicks++;
+    updateBackground();
+});
+
+function updateBackground() {
+    if (clicks == 1) {
+        imageContainer.style.background = "url('img/as1.png')";
+    } else if (clicks == 2) {
+        imageContainer.style.background = "url('img/as2.png')";
+    } else if (clicks == 3) {
+        imageContainer.style.background = "url('img/as3.png')";
     }
-);
+}
 
 let links1 = document.getElementById("link1").addEventListener("mouseenter",
     function()
