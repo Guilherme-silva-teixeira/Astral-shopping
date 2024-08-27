@@ -12,13 +12,38 @@ let right = document.getElementById("right").addEventListener("click", function(
     updateBackground();
 });
 
+imageContainer.innerHTML = `<h1>Montamos Seu pc</h1>
+                            <p>A sua máquina é montada pelos melhores profissionais do Pais.</p>`;
+
+/*    <!--<iv id="service1">
+                            <h1>Montamos Seu pc</h1>
+                            <p>A sua máquina é montada pelos melhores profissionais do Pais.</p>
+                        </div>
+                        <div id="service2">
+                            <h1>Garantia de 2 anos</h1>
+                            <p>Nossos produtos possuem uma garantia de 2 anos com total suporte para defeitos.</p>
+                        </div>
+                        <div id="service3">
+                            <h1>Suporte 24 horas</h1>
+                            <p>Nosso atendimento especialixado em manutenção com suporte 24 horas por dia 7 dias por semana.</p>
+                        </div>--> */
+
 function updateBackground() {
+    imageContainer.style.color = "#fff";
     if (clicks == 1) {
         imageContainer.style.background = "url('img/as1.png')";
+        imageContainer.innerHTML = `<h1>Montamos Seu pc</h1>
+                            <p>A sua máquina é montada pelos melhores profissionais do Pais.</p>`;
     } else if (clicks == 2) {
         imageContainer.style.background = "url('img/as2.png')";
+        imageContainer.innerHTML = `<h1>Garantia de 2 anos</h1>
+                            <p>Nossos produtos possuem uma garantia de 2 anos com total suporte para defeitos.</p>
+                        `;
     } else if (clicks == 3) {
         imageContainer.style.background = "url('img/as3.png')";
+        imageContainer.innerHTML= `
+                            <h1>Suporte 24 horas</h1>
+                            <p>Nosso atendimento especialixado em manutenção com suporte 24 horas por dia 7 dias por semana.</p>`;
     }
 }
 
