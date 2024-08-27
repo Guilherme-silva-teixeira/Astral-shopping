@@ -22,6 +22,7 @@ function updateBackground() {
     }
 }
 
+
 let links1 = document.getElementById("link1").addEventListener("mouseenter",
     function()
     {
