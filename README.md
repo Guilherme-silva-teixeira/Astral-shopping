@@ -1,3 +1,3 @@
-Astral Hardware Company official online store;
-by Guilherme Silva Teixeira;
-FAQ: this project is in development.
+Astral Hardware Company official online store;<br>
+by Guilherme Silva Teixeira;<br>
+FAQ: this project is in development.<br>
