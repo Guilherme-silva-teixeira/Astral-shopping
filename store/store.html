@@ -3,97 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleT.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
-    <header></header>
-    <section>
-        <div id="out">
-            <div id="navbar">
-                <nav>
-                    <div id="icons">
-                        <a href="#"><img id="logo" height="77px" src="img/kz.png"></a>
-                    </div>
-                    <div id="linkz">
-                    <strong>
-                        <a href="#" id="link1">PC GAMER</a>
-                        <div id="bottomline-1"></div>
-                        </strong>
-                        <strong>
-                        <a href="#" id="link2">HARDWARE</a>
-                        <div id="bottomline-2"></div>
-                    </strong>
-                    </div>
-                    <div id="shop">
-                        <div id="icon1"><i class='bx bx-cart-alt'></i></div>
-                        <div id="icon2"><i class='bx bx-user'></i></div>
-                    </div>
-                </nav>
+<body id="body">
+    <div id="popupArea">
+    </div>
+    <header id="header01">
+        <div id="top">    
+        <div id="logo">
+            <img src="/img/wlogo.png" height="17px">
+        </div>
+        <div id="middle">
+            <a href="">PC GAMER</a>
+            <a href="">HARDWARE</a>
+            <div id="search">
+                <input type="text" id="searchT">
+                <button>
+                <i class='bx bx-search'></i>
+            </button>
             </div>
         </div>
-        <div id="javascript-popup-container"></div>
-        <div id="container">
-            <section id="firstL">
-                <div id="first-product">
-                    <div id="img">
-                        <span class="material-symbols-outlined">
-                            add_shopping_cart
-                            </span>
-                    </div>
-                    <div id="bottom-des">
-                        <input type="text" id="des-inp" placeholder="Adicionar produto:">
-                        <button id="des-btn">Adicionar</button>
-                    </div>
+        <div id="right">
+            <button><i class='bx bx-user' ></i></button>
+            <button><i class='bx bx-cart' ></i></button>
+            <button id="configButton"><i class='bx bx-cog'></i></button>
+        </div>
+        </div>
+        <div id="bottom">
+            <div id="header02">
+                <div id="departmentView">
+                    <i class='bx bx-menu'></i>&emsp13;
+                    DEPARTAMENTOS
                 </div>
-
-                <div id="product">
-                    <div id="imgProduct">
-                        <img src="img/rtx4060msi.jpeg">
-                    </div>
-                    <div id="bottomProduct">
-                        <p id="tipo">Placas de vídeo:</p>
-                        <p>RTX 4090 MSI</p>
-                        <div id="price">R$ 15.999,99</div>
-                        <a href="https://www.kabum.com.br/produto/534159/placa-de-video-rtx-4090-gaming-trio-24g-msi-nvidia-geforce-24gb-gddr6x-dlss-ray-tracing-g-sync?utm_id=21437971630&gad_source=1&gclid=Cj0KCQjwz7C2BhDkARIsAA_SZKYDunW9Z7pzLUZFl0mJd9hae1hxgvUM5e1Yvf8KK7QuZbkvOeb0KXQaAh0DEALw_wcB">
-                            <button>Comprar</button>
-                        </a>
-                    </div>
+                <div id="depNames">
+                    <a href="">PC GAMER</a>
+                    <a href="">KIT UPGRADE</a>
+                    <a href="">PERIFÉRICOS</a>
                 </div>
-
-                <div id="product">
-                    <div id="imgProduct">
-                        <img src="img/ryzen7.jpg">
-                    </div>
-                    <div id="bottomProduct">
-                        <p id="tipo">Processadores:</p>
-                        <p>AMD Ryzen 7 5700X</p>
-                        <div id="price">R$ 1.199,00</div>
-                        <a href="https://www.amazon.com.br/PROCESSADOR-AMD-5700X-100-100000926WOF-Cer%C3%A2mica/dp/B09VCHQHZ6/ref=asc_df_B09VCHQHZ6/?tag=googleshopp00-20&linkCode=df0&hvadid=379720742332&hvpos=&hvnetw=g&hvrand=6858655860199398375&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1031501&hvtargid=pla-1650899904217&psc=1&mcid=adfe74f41af737569651019c7dccf376">
-                            <button>Comprar</button>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="product">
-                    <div id="imgProduct">
-                        <img src="img/gabineteNZXT.jpg">
-                    </div>
-                    <div id="bottomProduct">
-                        <p id="tipo">Gabinetes:</p>
-                        <p>NZXT H9 Elite case...</p>
-                        <div id="price">R$ 999,99</div>
-                        <a href="https://www.terabyteshop.com.br/produto/23699/gabinete-gamer-nzxt-h9-elite-mid-tower-vidro-temperado-black-atx-sem-fonte-com-4-fans-cm-h91eb-01?gad_source=1&gclid=Cj0KCQjwz7C2BhDkARIsAA_SZKbDgZCjwKpmFxpS3KgCva0VQ7F7CY-oJn2FE42SL56mqNdOANhT2foaAhGCEALw_wcB">
-                            <button>Comprar</button>
-                        </a>
-                    </div>
-                </div>
-            </section>
             </div>
+        </div>
+    </header>
+    <section>
+        <div id="banner">
+
+        </div>
+    
+        <div id="products">
+            <div id="productArea">
+                <div id="product">
+                    <div id="productimg">
+                        <img src="https://img.terabyteshop.com.br/produto/g/kit-upgrade-amd-ryzen-5-5600gt-placa-mae-b450-16gb-2x8gb-ddr4_189906.jpg" height="177px">
+                    </div>
+                    <div id="productBottom">
+                        <div id="productTitle">Kit Upgrade AMD Ryzen 5 5600GT</div>
+                    <div id="prices">
+                        <div id="lin1"><del>De: R$ 1.999,99</del></div>
+                        <div id="lin2">Por: R$ 1.544,99</div>
+                        <div id="lin3">12x de R$ 151,47 sem juros</div>
+                    </div>
+                    <div id="mouseEnterArea">  
+                    </div>
+                </div>
+                </div>
+                
+                <div id="product">
+                    <div id="productimg">
+                        <img src="https://img.terabyteshop.com.br/produto/g/placa-de-video-xfx-amd-radeon-rx-6600-swft-210-8gb-gddr6-rx-66xl8lfdq_151481.png" height="177px">
+                    </div>
+                    <div id="productBottom">
+                        <div id="productTitle">
+                            Placa de Vídeo XFX AMD Radeon RX 6600</div>
+                    <div id="prices">
+                        <div id="lin1"><del>De: R$ 2.499,99</del></div>
+                        <div id="lin2">Por: R$ 1.399,90</div>
+                        <div id="lin3">à vista com 15% de desconto no boleto ou pix</div>
+                    </div>
+                    <div id="mouseEnterArea">  
+                    </div>
+                </div>
+                </div>
+
+                <div id="product">
+                    <div id="productimg">
+                        <img src="https://img.terabyteshop.com.br/produto/g/kit-upgrade-amd-ryzen-5-5600gt-placa-mae-b450-16gb-2x8gb-ddr4_189906.jpg" height="177px">
+                    </div>
+                    <div id="productBottom">
+                        <div id="productTitle">Kit Upgrade AMD Ryzen 5 5600GT</div>
+                    <div id="prices">
+                        <div id="lin1"><del>De: R$ 1.999,99</del></div>
+                        <div id="lin2">Por: R$ 1.544,99</div>
+                        <div id="lin3">12x de R$ 151,47 sem juros</div>
+                    </div>
+                    <div id="mouseEnterArea">  
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
     </section>
-    <footer></footer>
-    <script src="script.js"></script>
+    <script src="scriptT.js"></script>
 </body>
 </html>
