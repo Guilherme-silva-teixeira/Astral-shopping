@@ -1,0 +1,71 @@
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background: #050505;
+}
+
+#headingLogo
+{
+    margin-top: -17px;
+    height: 47px;
+    width: 47px;
+    zoom: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fixed
+{
+    position: fixed;
+    z-index: 1;
+    padding: 17px;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px)
+{
+
+    #fixed
+    {
+        padding: 10px;
+    }
+
+    .slides
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #slide1
+    {
+        color: #fff;
+    }
+
+    #slide1 #right
+    {
+        font-family: 'Helveltica Neue';
+    }
+
+    #slide1 #slideImage1
+    {
+        height: 370px;
+    }
+}
